@@ -55,14 +55,5 @@
     "@storybook/preset-create-react-app": "^2.0.0",
     "@storybook/react": "^5.3.14",
     "semantic-release": "^17.0.4"
-  },
-  "release": {
-    "branches": [
-      "main"
-    ]
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
   }
 }
