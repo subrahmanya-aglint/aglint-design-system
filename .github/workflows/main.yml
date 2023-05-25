@@ -17,11 +17,12 @@ jobs:
       - name: Install dependencies
         run: npm install
       - name: Build app
-        run: npm run build-storybook
+        run: npm run build
       - name: Update package version
         run: npm version --no-git-tag-version major
       - name: Semantic release
         env:
+          CI: true
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
