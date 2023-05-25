@@ -20,3 +20,5 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           REPO_URL: https://github.com/subrahmanya-aglint/aglint-design-system
         run: npx semantic-release
+          --debug
+          --repositoryUrl=$REPO_URL
