@@ -19,7 +19,7 @@ jobs:
       - name: Build app
         run: npm run build
       - name: Update package version
-        run: npm version --no-git-tag-version <version-type>
+        run: npm version --no-git-tag-version minor
       - name: Semantic release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
