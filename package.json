@@ -46,10 +46,7 @@
   "plugins": [
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/npm",
-    "@semantic-release/git"
+    "@semantic-release/npm"
   ],
   "devDependencies": {
     "@storybook/addon-actions": "^5.3.14",
@@ -63,5 +60,9 @@
     "branches": [
       "main"
     ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
   }
 }
