@@ -24,5 +24,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          REPO_URL: https://github.com/subrahmanya-aglint/aglint-design-system
+          REPO_URL: git@github.com:subrahmanya-aglint/aglint-design-system.git
         run: npx semantic-release
